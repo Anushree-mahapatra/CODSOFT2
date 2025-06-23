@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background:linear-gradient(white,rgb(224, 128, 224),rgb(245, 233, 233));
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: rgb(255, 200, 247);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+        header p{
+            margin-top: -12px;
+            font-size: 22px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: rgb(255, 252, 165);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover{
+            color:rgb(187, 255, 134);
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about img {
+            width: 200px;
+            border-radius: 50%;
+            margin-right: 30px;
+        }
+
+        .skills ul {
+            list-style: none;
+            
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skills li {
+            background-color: #801a72;
+            color: white;
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .skills li:hover{
+            background-color: rgb(250, 44, 154);
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project {
+            background-color: white;
+            border: 1px solid #ddd;
+            margin: 15px;
+            border-radius: 8px;
+            width: 300px;
+            overflow: hidden;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        
+
+        .project p {
+            padding: 15px;
+        }
+
+        .certificates ul{
+            list-style: none;
+            
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        .certificates li {
+            background-color: #801a72;
+            color: white;
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .certificates li:hover{
+            background-color: rgb(250, 44, 154);
+        }
+
+        .resume a {
+            display: block;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            width: 200px;
+            margin: 0 auto;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .resume a:hover{
+            background: rgb(250,44,154);
+        }
+
+        .contact p {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        footer {
+            .insta{
+                color:rgb(253, 74, 149);
+                text-decoration: none;
+            }
+            .fb{
+                color: rgb(139, 139, 247);
+                text-decoration: none;
+            }
+            .t{
+                color: skyblue;
+                text-decoration: none;
+            }
+            
+            
+        }
+
+        @media (max-width: 768px) {
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about img {
+                margin: 0 0 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Web Developer </p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certification & Courses</a>
+            <a href="#resume">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about">
+            <img src="Anushree Mahapatra (1).jpg" alt="Profile Image">
+            <div>
+                <p>Hello! Now I'm pursuing Master Of Computer Application(MCA) at Rourkela Institute of Management Studies(RIMS)
+                   also i completed my Bsc.Computer Science at Govt.Autonomous College , Rourkela. I'm interest in Web Development.
+                   I want to master in Web Development like HTML, CSS , JavaScript , Node.js , React.js  etc.
+                   I'm dedicated to creating clear, effective code and providing clients with high-caliber web solutions. 
+                    To guarantee that I deliver the greatest outcomes, I constantly work to pick up new abilities and keep up with the most recent developments in web development.
+
+                      </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <ul>
+                <li>Programming Language - C, JAVA , HTML, CSS, JavaScript</li>
+                <li>Tools - VSCode , Github</li>
+                <li>Database - MySQL</li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="p1.png" alt="Project 1">
+                <p><strong>Project 1:</strong> Online Railway Ticket Booking Website - A fully responsive online Railway Ticket Booking System
+                     built with Html,Cssand JavaScript.</p>
+            </div>
+            <div class="project">
+                <img src="p2.jpeg" alt="Project 2">
+                <p><strong>Project 2:</strong> E-commerce Site - A fully responsive online beauty store built with Html , Css and JavaScript .</p>
+            </div>
+
+            <div class="project">
+                <img src="p3.png" alt="Project 3">
+                <p><strong>Project 3:</strong> NGO Landing Page - A fully responsive Landing Page built with Html and Css.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!--Certificate Section-->
+     <section id="certificates">
+        <h2>My Certification & Courses</h2>
+        <div class="certificates">
+            <ul>
+                <li><b>PGDCA</b>-Rourkela Computer pvt.limited</li>
+                <li><b>Introduction To Artificial Intelligence </b>- Great Learning Academy</li>
+                <li><b>Intro To Graphics Design with Photoshop </b> - Great Learning Academy</li>
+                <li><b> AI for Beginners</b> - HP LIFE </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>My Resume</h2>
+        <div class="resume">
+            <a href="ANUSHREE  MAHAPATRA_ CV.pdf" download>Download Resume</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact">
+            <p>Email: mahapatraanushree129@gmail.com</p>
+            <p>Linkedin:linkedin.com/in/anushree-mahapatra-9a8819263</p>
+            <p>Phone: +91-7735537559</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+        <div> 
+            <a href="#" class="insta">Instagram</a> |
+            <a href="#" class="fb">Facebook</a> |
+            <a href="#" class="t">Twitter</a>
+        </div>
+    </footer>
+
+</body>
+</html>
